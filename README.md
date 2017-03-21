@@ -1,24 +1,94 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## List of API End Points
 
-Things you may want to cover:
+### Users
+GET localhost:3000/users.json
 
-* Ruby version
+POST localhost:3000/users.json
 
-* System dependencies
+params: name, password, username, email, country, phone_number
 
-* Configuration
+GET localhost:3000/users/{id}.json
 
-* Database creation
+PUT localhost:3000/users/{id}.json
 
-* Database initialization
 
-* How to run the test suite
+### Categories
 
-* Services (job queues, cache servers, search engines, etc.)
+GET localhost:3000/categories.json
 
-* Deployment instructions
+POST localhost:3000/categories.json
 
-* ...
+params : name, description
+
+GET localhost:3000/categories/{id}.json
+
+PUT localhost:3000/categories/{id}.json
+
+
+### Tags
+
+GET localhost:3000/tags.json
+
+POST localhost:3000/tags.json
+
+params : name, description
+
+GET localhost:3000/tags/{id}.json
+
+PUT localhost:3000/tags/{id}.json
+
+
+### Locations
+
+GET localhost:3000/locations.json
+
+POST localhost:3000/locations.json
+
+params: name, description, phone_number, email, address
+
+GET localhost:3000/locations/{id}.json
+
+PUT localhost:3000/locations/{id}.json
+
+
+### Departments
+
+GET localhost:3000/departments.json
+
+POST localhost:3000/departments.json
+
+params: name, description, phone_number, email, address
+
+GET localhost:3000/departments/{id}.json
+
+PUT localhost:3000/departments/{id}.json
+
+
+### Teams
+
+GET localhost:3000/teams.json
+
+POST localhost:3000/teams.json
+
+params: name, description, phone_number, email, address
+
+GET localhost:3000/teams/{id}.json
+
+PUT localhost:3000/teams/{id}.json
+
+
+
+### Blogs
+
+GET localhost:3000/blogs.json
+
+POST localhost:3000/blogs.json
+
+params: title, description, user(integer), categories(integer), tags(integer), location(integer), department(integer), team(integer)
+
+GET localhost:3000/blogs/{id}.json
+
+PUT localhost:3000/blogs/{id}.json
+
