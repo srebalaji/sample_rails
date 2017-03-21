@@ -9,6 +9,18 @@ POST localhost:3000/users.json
 
 params: name, password, username, email, country, phone_number
 
+#### Example POST Request
+{
+	"user": {
+		"name": "example",
+		"password": "example", 
+		"username": "example", 
+		"email": "example", 
+		"country": "example", 
+		"phone_number": "example"
+	}
+}
+
 GET localhost:3000/users/{id}.json
 
 PUT localhost:3000/users/{id}.json
